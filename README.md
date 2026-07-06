@@ -2,6 +2,7 @@
 PRISMA-ScR search strategy and reproducible pipeline for Spatio-Temporal Graph Neural Networks across sensor-driven urban and environmental applications
 
 ### Repo structure
+```
 STGNN-PRISMA-ScR/
 │
 ├── README.md
@@ -88,3 +89,4 @@ STGNN-PRISMA-ScR/
     ├── prisma_data.xlsx
     ├── inclusion_exclusion_rules.md
     └── search_strategy_appendix.md
+```
