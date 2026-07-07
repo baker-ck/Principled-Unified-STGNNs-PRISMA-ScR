@@ -15,10 +15,9 @@ PRISMA-ScR-Spatio-Temporal-GNN/
 │   ├── databases.yaml
 │   ├── generated_queries/
 │   │   ├── acm.txt
-│   │   ├── arxiv.txt
-│   │   ├── scopus.txt
 │   │   ├── ieee_xplore.txt
 │   │   ├── sciencedirect.txt
+│   │   ├── scopus.txt
 │   │   ├── web_of_science.txt
 │   │   └── all_queries.csv
 │   ├── generator.py
