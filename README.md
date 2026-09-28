@@ -1,4 +1,4 @@
-# PRISMA-ScR-Spatio-Temporal-GNN
+# PRISMA-ScR-Unified-STGNNs
 PRISMA-ScR search strategy and reproducible pipeline for Spatio-Temporal Graph Neural Networks across sensor-driven urban and environmental applications
 
 ### Repo structure
