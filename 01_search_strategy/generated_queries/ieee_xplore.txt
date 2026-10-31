@@ -1,0 +1,1 @@
+("graph neural network" OR GNN OR "graph convolutional network" OR GCN OR "graph attention network" OR GAT OR "graph transformer") AND (spatiotemporal OR "spatio temporal" OR "spatial temporal") AND (traffic OR transport OR mobility) AND (forecasting OR prediction)
