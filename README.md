@@ -13,7 +13,7 @@ Official open-science repository for the systematic scoping review: **"Principle
 │   ├── databases.yaml
 │   ├── search_generator.py
 │   └── generated_queries/
-│       ├── acm.txt
+│       ├── acm_digital_library.txt
 │       ├── ieee_xplore.txt
 │       ├── scopus.txt
 │       └── all_searches.csv
