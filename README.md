@@ -27,9 +27,9 @@ Official open-science repository for the systematic scoping review: **"Principle
 │   ├── PRISMA_data_extraction_form.pdf
 │   └── PRISMA_ScR_checklist.pdf
 ├── 04_tables/
-│   ├── Table1.tex
-│   ├── Table2.tex
-│   └── Table3.tex
+│   ├── Table5.tex
+│   ├── Table6.tex
+│   └── Table7.tex
 ├── Master_ScR_data_extraction.xlsx
 └── PRISMA_ScR_Checklist.pdf
 ```
