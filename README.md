@@ -18,8 +18,8 @@ Official open-science repository for the systematic scoping review: **"Principle
 │       ├── scopus.txt
 │       └── all_searches.csv
 ├── 02_retrieved_literature/
-│   ├── acm.bib
-│   ├── ieee.bib
+│   ├── acm_digital_library.bib
+│   ├── ieee_xplore.bib
 │   └── scopus.bib
 ├── 03_results_tables/
 │   ├── Table3.tex
