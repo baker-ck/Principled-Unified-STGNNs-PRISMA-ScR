@@ -1,11 +1,8 @@
 # Principled Unified Spatio-Temporal Graph Neural Networks for Traffic Forecasting: A Scoping Review
 
-[![PRISMA-ScR Compliant]([suspicious link removed])]([suspicious link removed])
-[![License: CC BY 4.0]([suspicious link removed])]([suspicious link removed])
-
 Official open-science repository for the systematic scoping review: **"Principled Unified Spatio-Temporal Graph Neural Networks for Traffic Forecasting: A Scoping Review"** by Clayton K. Baker and Clement N. Nyirenda (Department of Computer Science, University of the Western Cape).
 
-### Repo structure
+## Repo structure
 ```
 PRISMA-ScR-Spatio-Temporal-GNN/
 │
