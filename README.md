@@ -18,19 +18,17 @@ Official open-science repository for the systematic scoping review: **"Principle
 │       ├── scopus.txt
 │       └── all_searches.csv
 ├── 02_retrieved_literature/
-│       ├── acm.bib
-│       ├── ieee.bib
-│       └── scopus.bib
-├── 03_prisma_reporting/
-│   ├── PRISMA_ScR_flowchart.png
-│   ├── PRISMA_data_extraction_form.pdf
-│   └── PRISMA_ScR_checklist.pdf
-├── 04_tables/
+│   ├── acm.bib
+│   ├── ieee.bib
+│   └── scopus.bib
+├── 03_results_tables/
+│   ├── Table3.tex
+│   ├── Table4.tex
 │   ├── Table5.tex
 │   ├── Table6.tex
 │   └── Table7.tex
 ├── Master_ScR_data_extraction.xlsx
-└── PRISMA_ScR_Checklist.pdf
+└── PRISMA_ScR_checklist.pdf
 ```
 ---
 
