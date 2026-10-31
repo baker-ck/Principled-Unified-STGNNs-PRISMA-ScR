@@ -2,41 +2,17 @@
 
 Official open-science repository for the systematic scoping review: **"Principled Unified Spatio-Temporal Graph Neural Networks for Traffic Forecasting: A Scoping Review"** by Clayton K. Baker and Clement N. Nyirenda (Department of Computer Science, University of the Western Cape).
 
-## Repo structure
-```
-PRISMA-ScR-Spatio-Temporal-GNN/
-│
-├── README.md
-├── LICENSE
-├── CITATION.cff
-├── .gitignore
-│
-├── 01_search_strategy/
-│   ├── concepts.yaml
-│   ├── databases.yaml
-│   ├── search_generator.py
-│   ├── generated_queries/
-│   │   ├── acm.txt
-│   │   ├── ieee_xplore.txt
-│   │   ├── scopus.txt
-│   │   └── all_searches.csv
-├── 02_retrieved_literature/
-│   ├── raw_exports/
-│   │   ├── acm.bib
-│   │   ├── ieee.bib
-│   │   └── scopus.bib
-├── 03_prisma_reporting/
-│   ├── PRISMA_ScR_flowchart.png
-│   ├── PRISMA_data_extraction_form.pdf
-│   └── PRISMA_ScR_checklist.pdf
-├── 04_results_tables/
-│   ├── Table3.tex
-│   └── Table4.tex
-│   ├── Table5.tex
-│   ├── Table6.tex
-│   └── Table7.tex
-└── README.md
-```
+---
+
+## 📌 Repository Contents
+
+- `PRISMA_ScR_checklist.pdf`: Completed 22-item PRISMA-ScR reporting checklist.
+- `Master_ScR_data_dxtraction.xlsx`: Full 15-dimensional data extraction matrix across all 28 included primary studies.
+- `Table5.tex`: LaTeX longtable for Table 5 (Structural unification & code reproductibility audit).
+- `Table6.tex`: LaTeX longtable for Table 6 (Core, auxiliary, & emerging spatio-temporal processing mechanisms).
+- `Table7.tex`: LaTeX longtable for Table 7 (Computational cost, limits, & gaps).
+
+---
 
 ## 📚 Indexed Collection of Primary Included Studies (N = 28)
 
