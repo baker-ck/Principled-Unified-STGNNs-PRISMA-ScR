@@ -1,0 +1,38 @@
+Graph concepts:
+
+  - name: Graph
+    terms:
+      - graph neural network*
+      - GNN
+      - graph convolutional network*
+      - GCN
+      - graph attention network*
+      - GAT
+      - graph transformer*
+
+Spatio-temporal concepts:
+
+  - name: SpatioTemporal
+    terms:
+      - spatiotemporal
+      - spatio temporal
+      - spatial temporal
+
+Domain concepts:
+
+  - name: domain
+    terms:
+      - traffic
+      - transport
+      - mobility
+      
+Task concepts:
+
+  - name: Task
+    terms:
+      - forecasting
+      - prediction
+
+
+
+

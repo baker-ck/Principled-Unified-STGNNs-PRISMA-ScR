@@ -1,0 +1,29 @@
+ACM_Digital_Library:
+  field_templates:
+    - "[Title: {term}]"
+    - "[Abstract: {term}]"
+    - "[Keyword: {term}]"
+  quote: '"'
+  wildcard: "*"
+  use_wildcard: false
+  and: "AND"
+  or: "OR"
+  parentheses: true
+
+IEEE_Xplore:
+  quote: '"'
+  wildcard: "*"
+  use_wildcard: false
+  and: "AND"
+  or: "OR"
+  parentheses: true
+
+Scopus:
+  field: "TITLE-ABS-KEY("
+  field_close: ")"
+  quote: '"'
+  wildcard: "*"
+  use_wildcard: false
+  and: "AND"
+  or: "OR"
+  parentheses: true
