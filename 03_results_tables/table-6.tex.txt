@@ -1,0 +1,211 @@
+\begingroup
+\footnotesize
+\begin{longtable}{p{1.5cm} p{2.25cm} p{2.25cm} p{2.25cm} p{2.25cm}}
+\caption{Core, auxiliary, and emerging spatio-temporal processing modules }\\
+\label{tab:spatio_temporal_processing_modules}\\
+\hline
+\textbf{Model \break(Year)} & 
+\textbf{Spatial \break processing} & 
+\textbf{Temporal \break processing} & 
+\textbf{Hybrid \& multi-modal paradigms} & 
+\textbf{Emerging \& cross-scale mechanisms} 
+\\
+\hline
+\endfirsthead
+
+\caption[]{Core, auxiliary, and emerging spatio-temporal processing modules (continued)}\\
+
+\hline
+\textbf{Model \break(Year)} & 
+\textbf{Spatial \break processing} & 
+\textbf{Temporal \break processing} & 
+\textbf{Hybrid \& multi-modal paradigms} & 
+\textbf{Emerging \& cross-scale mechanisms}    
+\\
+\hline
+\endhead
+
+\hline
+\multicolumn{5}{r}{{Continued on next page}} \\
+\endfoot
+
+\hline
+\endlastfoot
+
+\hline
+AST-SGCN\\(2025) ~\cite{wei2025attention} &
+Spatial-Temporal Hybrid Stacking Layer (STHSL) with 1st-order Chebyshev polynomial GCNs and Residual Adaptive Adjacency Matrices (Res-AAM). &
+Fourier Transform Layer (FTL with DFT/IDFT and FGO) and Spatial-Temporal Synchronous Attention (STS-Att) over $T_s \times N$ vertices. &
+Frequency-domain filtering via Discrete Fourier Transform (DFT) coupled with spatial-temporal matrix factorisation. &
+Matrix factorisation (MF) in STS-Att to compress parameter footprint and avoid over-fitting on small graphs. \\
+\hline
+\pagebreak[4]
+ASTEGCN\\(2025) ~\cite{zeng2025aste} &
+Local Spatial-Temporal Graph Convolution (LSTGCN) and Node Adaptive Graph Convolution Network (NAGCN) with TopK masking. &
+Multi-Resolution Gated Temporal Convolution Network (MRGTCN) and Jump-Gated Temporal Convolution Network (JGTCN) operating in parallel residual streams. &
+Combines static physical topology with dynamic node-adaptive embeddings and jump-time dilated convolutions. &
+Double residual stacking mechanism and multi-resolution temporal receptive fields (kernels $1\times 2, 1\times 3, 1\times 6, 1\times 7$). \\
+\hline
+ASTMGODE\\(2025) ~\cite{chen2025attention} &
+Continuous Tensor Graph Neural ODE (GODE) with 3 multi-view adjacency matrices ($A^{\text{SP}}, A^{\text{DTW}}, A^{\text{PE}}$) preventing over-smoothing at deep layers. &
+Temporal Attention (TAtt) and Gated Dilated Temporal Convolutional Network (TCN) combined with continuous ODE state integration. &
+Fuses spatial distance, DTW sequence similarity, and pattern correlation with continuous Neural ODE solvers. &
+Infinite-depth continuous state propagation ($\frac{dh(\tau)}{d\tau} = f(h(\tau), \tau; \theta)$) via ODESolver. \\
+\hline
+C-ChebNet\\(2025) ~\cite{sun2025chebnet} &
+Spectral Chebyshev Graph Convolution (ChebNet, order $K=4$) operating over non-local ST cross-correlation Laplacians. &
+Cross-correlation temporal lag window ($T_{\text{delay}}=12, S_{\text{delay}}=4$) embedded directly into the spectral graph shift operator. &
+Integrates spatial distance and non-local time-lagged cross-correlation functions into a unified Laplacian matrix. &
+Non-local spatio-temporal correlation filtering over $K$-order ChebNet spectral polynomials. \\
+\hline
+DSTF\\(2025) ~\cite{wang2025dstf} &
+Geom-GCN low-level and high-level aggregation functions $o(\cdot), q(\cdot)$ with 2D geometric spatial relationships (upper-left, lower-left, upper-right, lower-right). &
+Multi-scale temporal pattern extractor combined with Dynamic Spatio-Temporal Synchronization Aggregation Module (DSTSAM). &
+Integrates structural embeddings (Struc2vec, Node2vec) with multi-head global spatial attention and GRes2Net modules. &
+Dual-perspective modelling capturing local geometric topology, global dynamic spatial attention, and multi-scale temporal patterns simultaneously. \\
+\hline
+KDE-HSMGCN\\(2025) ~\cite{xu2025heterogeneous} &
+Multi-Graph Convolutional Layer aggregating features across $K$-order neighbourhood relationships over 3 adjacency matrices ($A^{\text{spa}}, A^{\text{dtw}}, A^{\text{ada}}$). &
+Kernel Density Estimation (KDE) based frequency feature mapping module combined with multi-scale Dilated Causal Convolution Layers. &
+Fuses non-parametric probability density distribution generator (KDE) with multi-scale temporal dilated convolutions. &
+Skip connections mapping spatio-temporal features at multiple time-scales ($1, 2, 3, 4$) to a high-dimensional space without information coverage. \\
+\hline
+\pagebreak[4]
+LLGformer\\(2025) ~\cite{jin2025llgformer} &
+Global Spatio-Temporal Graph Transformer Encoder computing self-attention across all $N \times T$ tokens simultaneously. &
+Synchronous full-sequence self-attention over global ST matrix $A_G$ and Conv1D mapping decoder. &
+Fuses historical weekly periodic traffic patterns and current hourly traffic data via a gated hybrid embedding module. &
+Memsizer optimisation and sparse mask matrix strategies (LLGformer-M) to reduce global ST attention complexity. \\
+\hline
+MDEI-SSTGGAT\\(2025) ~\cite{zhang2025synchronous} &
+Multi-dimensional edge-enhanced Graph Attention Network (GAT) with trainable edge channels ($C=2$). &
+Synchronous 3D ST grammar graph attention aggregating across temporal and spatial neighbours simultaneously via terminal, AND, and OR grammar rules. &
+Incorporates multi-dimensional edge information matrices and optimal clustering for spatial sub-graph partitioning. &
+Grammar module hierarchical parsing (Terminal-rule, And-rule, Or-rule) across multi-layer 3D super-graphs. \\
+\hline
+MSF-GODE\\(2025) ~\cite{liu2025msf} &
+Spectral Graph Convolution (ChebNet / GCN) integrated into continuous 3-mode tensor ODE state derivatives. &
+Continuous Spatio-temporal Neural ODE (ST-ODE) with Euler solver executing 3-mode tensor multiplication $H^0 \times_1 A \times_2 U \times_3 W_1$. &
+Integrates multi-scale frequency domain sampler (FFT), XGBoost pseudo-supervised key sample identifier, contrastive learning. &
+Continuous multi-scale temporal-frequency fusion module with cross-channel attention. \\
+\hline
+ReDyNet\\(2025) ~\cite{gao2025responsive} &
+Dynamic Chebyshev Graph Convolution (order k=4) with dynamic parameters generated via meta-parameter pool contraction $W = \sum (F_e \times W_{p,e})$. &
+Responsive Dynamic Learning (RDL) tensor contraction operating over unified spatio-temporal meta-parameter matrices. &
+Integrates environmental weather factors (W), commute date type (D), historical flow dynamics into contextual spatial embedding. &
+Redundancy Context Disentanglement (RCD) using Information Bottleneck (IB) principles to separate essential signals from noise. \\
+\hline
+STFTGCN\\(2025) ~\cite{zhang2025trend} &
+Spatio-Temporal Synchronous Graph Convolution operating directly over 3N x 3N spatio-temporal fusion graphs. &
+Trend-aware Multi-head Self-Attention (TrMSA) module extracting multi-frequency trend dynamics across time steps. &
+Fuses physical distance, topological connectivity, geographical proximity, time-lagged correlation matrices. &
+Multi-graph fusion mechanism combining local spatial geometry and global temporal trends in a single unified shift matrix. \\
+\hline
+\pagebreak[4]
+STS-GraphSAGE\\(2025) ~\cite{yu2025spatial} &
+GraphSAGE neighbourhood aggregation (mean / max-pooling) operating over 3D Spatial-Temporal Synchronous Graph $A_{\text{ST}}$ in $\mathbb{R}^{3N \times 3N}$. &
+Cross-time-step edge aggregation on local 3D super-graph $A_{\text{ST}}$ synchronised across 3-step sliding windows. &
+Fuses physical spatial distance, Spearman traffic correlation, causal temporal transition graphs. &
+Multi-layer parallel STSG graph aggregation extending receptive field from 1st-order to multi-order ST neighbours. \\
+\hline
+STSGNN\\(2025) ~\cite{chen2025designing} &
+Spectral 2D Graph Fourier Transform ($U_s \otimes U_t$) filtering over bivariate spatial Laplacian $L_s$ and temporal Laplacian $L_t$. &
+Bivariate Bernstein polynomial approximation ($P=10, Q=5$) over temporal Laplacian spectrum and pyramidal gated convolutions ($l_1=1, l_2=3, l_3=6$). &
+Joint spatial-temporal joint spectral graph filtering in 2D Fourier domain. &
+Pyramidal gated convolution module and bivariate Bernstein polynomial expansion ($b_p^P(\mu) b_q^Q(\nu)$). \\
+\hline
+STUM\\(2025) ~\cite{ruan_cross_2025} &
+Space-adaptive ASTUC cell operations paired with plug-and-play backbone extractors (STGCN, GWN, AGCRN, STAE, STID, D2STGNN, PDFormer, STWave). &
+Time-adaptive ASTUC cell operations and Multi-Layer Residual Fusion (MLRF) blocks eliminating sequential information bottlenecks. &
+Low-rank matrix decomposition ($\Delta W = A \times B^T \cdot \frac{r}{\sqrt{\alpha + \epsilon}}$) enabling direct cross-dimensional feature interactions. &
+Plug-and-play framework architecture that can wrap any existing STGNN backbone to convert factorised modelling into a unified unitised representation. \\
+\hline
+StarG2N\\(2025) ~\cite{zhao2025starg2n} &
+K-order Chebyshev Graph Convolution (ChebNet) operating over 3D local spatial-temporal graph matrix $L_w \times N$. &
+Global Analysis Module combining Gate Recurrent Units (GRU) and Multi-Head Self-Attention (MHSA) over local ST representations. &
+Integrates physical road distance matrices with sliding window local spatio-temporal graphs. &
+Sliding window mechanism ($L_w=3, S_w=1$) preserving temporal continuity across local ST sub-graphs without feature truncation. \\
+\hline
+CSHGCN\\(2026) ~\cite{hu2026causal} &
+Factorised causal source-target adaptive graph convolutions reducing spatial parameter complexity from $\mathcal{O}(N^2)$ to $\mathcal{O}(2Nd)$. &
+Dilated causal 1D convolutions ($K=2$) coupled with STMTM joint transition networks and adaptive gating mechanisms. &
+High-Frequency Residual Connection (HFRC) and Markov state-space transition rules across space and time. &
+Causal embedding factorisation and explicit ST Markovian transition cell. \\
+\hline
+\pagebreak[4]
+DG-STMTL\\(2026) ~\cite{cui2025dg} &
+Group-wise Spatio-Temporal Graph Convolution (GSTGC) with multi-layer GCN-AGG operations over task-specific hybrid adjacency matrices ($\mathcal{A}_k^*$). &
+Temporal grouping and multi-step cross-time slot message passing on 3D super-graph matrices (($3N \times 3N$)). &
+Fuses static physical priors with dynamic cross-task knowledge embeddings via task-specific gating mechanisms. &
+Multi-task integration unit for simultaneous co-prediction of traffic flow and traffic speed without negative transfer. \\
+\hline
+DMGGCN\\(2026) ~\cite{deng2026dynamic} &
+Dynamic Multi-dimensional Graph Convolution Encoder (DMGCRU) with spatio-temporal meta-parameter generated dynamic graph kernels ($\hat{G}_\tau$). &
+Dual-stream gated fusion and trend-alignment parallel decoder (TSTAD) linking historical representations to future horizons directly. &
+Integrates intra-day ($H_t$) and inter-day ($H_c$) periodic temporal embeddings with spatial embeddings ($E_s$). &
+Meta-parameter pool decomposition ($\boldsymbol{\rho}_{\text{st}}$) and trend-aligned parallel decoding to prevent multi-step error accumulation. \\
+\hline
+Fed-STSGCN\\(2026) ~\cite{yu2026federated} &
+Spatial-Temporal Synchronous Graph Convolution Modules (STSGCM) with gated graph convolutions (GGC). &
+Cross-timestep edge aggregation on local block matrix $A_{\text{ST}} \in \mathbb{R}^{2N \times 2N}$ synchronised across privacy-preserving client nodes. &
+Federated learning architecture using cosine-similarity-based client parameter aggregation on server. &
+Cross-city privacy-preserving spatio-temporal transfer learning without centralising raw traffic sensor data. \\
+\hline
+GRU-GCN\\(2026) ~\cite{mayme2025hybrid} &
+2-layer Spectral Graph Convolutional Network (GCN) using 1st-order Chebyshev polynomial filters and 10-dimensional learnable community embeddings. &
+Gated Recurrent Unit (GRU, hidden dim 64) processing 14 lag demand features prior to spatial aggregation. &
+Integrates 14 temporal lag features, 5 environmental/contextual features (weather, calendar, weekend flags), and spatial community membership embeddings. &
+Two-stage dual-branch framework featuring a Binary Classification Branch (zero vs non-zero probability $P$) and a Regression Branch (demand magnitude $A$), combined via $P \odot A$. \\
+\hline
+HSTGL\\(2026) ~\cite{sun2026integrating} &
+Heterogeneous Spatio-Temporal Graph Attention (HSTGAT based on GATv2) aggregating across heterogeneous edge types. &
+Synchronous cross-timestep interaction edges within 3D heterogeneous super-graph. &
+Multi-type heterogeneous representations fusing spatial distance, temporal transition, semantic similarity. &
+Time-series clustering module to group similar traffic patterns before super-graph message passing. \\
+\hline
+\pagebreak[4]
+LAD-SGNN\\(2026) ~\cite{zheng2026llm} &
+Multi-layer Stiefel Graph Spectral Convolution (MSGSC) executing orthogonal low-rank spectral graph filtering. &
+Linear Dynamic Graph Optimization (LDGOSM) over time-varying patch sequences and lightweight LLM (GPT-2) token reasoning. &
+Integrates GNN structured spatio-temporal patch representations with language prompts for frozen LLM reasoning. &
+Low-rank orthogonal spectral filtering on the Stiefel manifold eliminating repeat $\mathcal{O}(N^3)$ eigen-decompositions; zero-shot and few-shot transfer. \\
+\hline
+ST-Camba\\(2026) ~\cite{wang2026st} &
+Spectral Chebyshev Graph Convolution embedded directly into state space input projection bias matrix $S = \text{GCN}_{d \to N}(X) + B$. &
+Convolutional State Space Equation (CSSE) continuous state transition matrix A coupling Mamba state vectors with spatial attention matrix $M_{\text{LR-Act}}^*$. &
+Integrates Periodic Embeddings (PE, dim 24), node topological features, selective state-space sequence modelling. &
+Lerp-based Gated Unit (LGU) mixing spatial and temporal features across flattened spatio=temporal stacks $X \in \mathbb{R}^{TM \times d}$ with linear complexity. \\
+\hline
+STSA-GF\\(2026) ~\cite{yang2026short} &
+Multi-graph weighted fusion operator adaptively aggregating heterogeneous spatial graphs via 1D channel convolution. &
+Spatio-Temporal Joint Self-Attention mechanism computing attention synchronously over flattened $T \times N$ space-time tokens. &
+Integrates multi-graph topological, flow-similarity, origin-destination (OD) passenger transition matrices with gated fusion. &
+Autoregressive decoder with seed sequence construction and gated attention-structure interaction. \\
+\hline
+STSAGNN\\(2026) ~\cite{liu2026spatio} &
+Single-layer Synchronous Adaptive Graph Convolution (SAGCN) with k-nearest neighbour sparsification. &
+Sequence-to-patch embedding layer and Spatio-Temporal Enhanced GRU Decoder utilising full encoder embeddings. &
+Integrates patch temporal embeddings, node spatial embeddings, dynamic matrix gating. &
+Patch-based sequence segmentation reducing effective sequence length and k-NN sparse synchronous graph message passing. \\
+\hline
+TLSTS-GraphSAGE\\(2026) ~\cite{yu2025transfer} &
+Attention-based STS-GraphSAGE operator executing neighbour feature aggregation synchronously across space and preceding time steps. &
+Causal temporal adjacency $A_{\text{ST}}$ ensuring information flows only from preceding time steps to prevent future data leakage. &
+Parameter-sharing STS-GraphSAGE generator paired with a Wasserstein distance discriminator in a GAN transfer learning framework. &
+Cross-city privacy-preserving transfer learning bridging source domain and target domain data distributions. \\
+\hline
+TSGCN\\(2026) ~\cite{jia2025trajectory} &
+Local Spatio-temporal Graph Convolution Module (LSTGCM) operating over local 3D demand sub-graphs of size $3 \times m$. &
+Global Spatio-temporal Graph Convolution Module (GSTGCM) aggregating 3-step sliding window local ST representations. &
+Integrates MR-FastDTW demand pattern similarity matrices with physical road topology and temporal embeddings. &
+MR-FastDTW algorithm reducing DTW time complexity from $\mathcal{O}(n^2)$ to $\mathcal{O}(Tn)$ for large-scale demand graphs. \\
+\hline
+Weaver\\(2026) ~\cite{cheong2026weaver} &
+Parallel-Kronecker Matrix-Vector Product ($P^2$-KMV) executing joint spatio-temporal message passing $(\Theta_T \otimes \Theta_S)v_e = \text{Vec}(\Theta_S V_e \Theta_T^T)$. &
+Weighted Implicit Kronecker Product Summation (W-iKPS) consolidating multi-head attention heads $\sum_{h=1}^H (\Theta_T^{(h)} \otimes \Theta_S^{(h)}) V^{(h)} W_O$ without explicit $\mathcal{O}((PN)^2)$ expansion. &
+Node-State Dictionary ($M_{\Xi}$ count, $K_{\Xi}$ width), Tanimoto Valence Attention, cyclical TOD/DOW temporal metadata. &
+Kronecker graph product formalizing exact joint spatio-temporal attention maps with $\mathcal{O}(PN(P+N))$ time and $\mathcal{O}(P^2+N^2)$ space complexity. 
+\\
+\hline
+\end{longtable}
+\endgroup
