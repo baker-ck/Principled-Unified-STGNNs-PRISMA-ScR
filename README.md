@@ -22,11 +22,9 @@ Official open-science repository for the systematic scoping review: **"Principle
 │   ├── ieee_xplore.bib
 │   └── scopus.bib
 ├── 03_results_tables/
-│   ├── Table3.tex
-│   ├── Table4.tex
-│   ├── Table5.tex
-│   ├── Table6.tex
-│   └── Table7.tex
+│   ├── table-5.tex
+│   ├── table-6.tex
+│   └── table-7.tex
 ├── Master_ScR_data_extraction.xlsx
 └── PRISMA_ScR_checklist.pdf
 ```
